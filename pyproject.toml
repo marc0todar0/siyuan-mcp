@@ -1,0 +1,15 @@
+[project]
+name = "siyuan-mcp"
+version = "0.1.0"
+description = "MCP server for SiYuan Note wiki"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]",
+]
+
+[project.scripts]
+siyuan-mcp = "siyuan_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
